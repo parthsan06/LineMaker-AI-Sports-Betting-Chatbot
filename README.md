@@ -2,6 +2,9 @@
 
 A customer-support chat system for a sports betting platform, with strict context-grounding and compliance-first prompt design. The architecture is a single-process application: a reactive Streamlit interface invoking a stateless, validated chat-logic module directly — no network boundary between UI and inference layer.
 
+**Live demo:** [[https://linemaker-ai-sports-betting-chatbot-efmfn94z8xlm64ainbyd6s.streamlit.app]]
+
+
 ## System Architecture
 
 The system implements a grounded-prompt pattern, injecting platform-specific context ahead of every LLM call rather than relying on the model's general knowledge or a fine-tuned weight set.
@@ -49,5 +52,3 @@ GEMINI_API_KEY="your_api_key_here"
 ```
 streamlit run app.py
 ```
-
-**Live demo:** [gotta add a Streamlit Cloud link here]
